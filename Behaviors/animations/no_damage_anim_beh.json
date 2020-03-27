@@ -1,0 +1,14 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.misc.no_damage_beh": {
+			"animation_length": 0.2,
+			"loop": true,
+			"timeline": {
+				"0.1": [
+					"/effect @s resistance 30 30 true"
+				]
+			}
+		}
+	}
+}

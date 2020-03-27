@@ -1,0 +1,15 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ljw:i_fragment",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": "i_fragment",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "flesh"
+    }
+  }
+}

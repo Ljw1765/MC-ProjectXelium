@@ -1,0 +1,15 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ljw:c_core",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": "c_core",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "flesh"
+    }
+  }
+}

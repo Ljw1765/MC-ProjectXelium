@@ -1,0 +1,29 @@
+{
+  "mob.sentry.hurt": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/mob/sentry/deactivate"
+    ]
+  },
+  
+  "mob.sentry.death": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/mob/sentry/deactivate"
+    ]
+  },
+  
+  "mob.sentry.deactivated": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/mob/sentry/deactivate"
+    ]
+  },
+  
+  "mob.sentry.activated": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/mob/sentry/activate"
+    ]
+  }
+}

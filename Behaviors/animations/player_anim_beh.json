@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.p_bomb_beh": {
+			"animation_length": 2.1,
+			"timeline": {
+				"0.1": [
+					"/function create_p_bomb"
+				],
+				"2.0": [
+					"@s minecraft:created_p_bomb"
+				]
+			}
+		},
+		"animation.player.warp_pad_beh": {
+			"animation_length": 2.1,
+			"timeline": {
+				"0.1": [
+					"/function create_warp_pad"
+				],
+				"2.0": [
+					"@s minecraft:created_warp_pad"
+				]
+			}
+		},
+		"animation.player.sentry_beh": {
+			"animation_length": 2.1,
+			"timeline": {
+				"0.1": [
+					"/function create_sentry"
+				],
+				"2.0": [
+					"@s minecraft:created_sentry"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+		"identifier": "ljw:boost_pad"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "IFI",
+      "FBF",
+      "IFI"
+    ],
+    "key": {
+      "F": {
+        "item": "ljw:i_fragment"
+      },
+	  "I": {
+        "item": "minecraft:iron_ingot"
+      },
+	  "B": {
+        "item": "ljw:i_fragment_block"
+      }
+    },
+    "result": {
+      "item": "ljw:boost_pad"
+    }
+  }
+}

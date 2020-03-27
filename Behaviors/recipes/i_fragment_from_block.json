@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "ljw:i_fragment_from_block"
+    },
+
+
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "ljw:i_fragment_block"
+      }
+    ],
+    "result": {
+      "item": "ljw:i_fragment",
+      "count": 9
+    }
+  }
+}

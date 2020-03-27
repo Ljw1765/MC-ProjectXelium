@@ -1,0 +1,37 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "ljw:boost_pad",
+            "is_experimental": false,
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "minecraft:loot": {
+                "table": "loot_tables/blocks/boost_pad.json"
+            },
+            "minecraft:destroy_time": {
+                "value": 3
+            },
+            "minecraft:explosion_resistance": {
+                "value": 5
+            },
+            "minecraft:friction": {
+                "value": 0.1
+            },
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:map_color": {
+                "color": "#777777"
+            },
+            "minecraft:block_light_absorption": {
+                "value": 0
+            },
+            "minecraft:block_light_emission": {
+                "emission": 1.0
+            }
+        }
+    }
+}

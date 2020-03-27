@@ -1,0 +1,104 @@
+{
+	"materials": {
+		"version": "1.0.0",
+		
+		"ljw_entity_static": {
+			"vertexShader": "shaders/entity.vertex",
+			"vrGeometryShader": "shaders/entity.geometry",
+			"fragmentShader": "shaders/entity.fragment",
+			"vertexFields": [
+				{ "field": "Position" },
+				{ "field": "Normal" },
+				{ "field": "UV0" }
+			],
+			"variants": [
+				{
+				"skinning": {
+					"+defines": [ "USE_SKINNING" ],
+						"vertexFields": [
+							{ "field": "Position" },
+							{ "field": "BoneId0" },
+							{ "field": "Normal" },
+							{ "field": "UV0" }
+						]
+					}
+				},
+				{
+					"skinning_color": {
+						"+defines": [ "USE_SKINNING", "USE_OVERLAY" ],
+						"+states": [ "Blending" ],
+						"vertexFields": [
+							{ "field": "Position" },
+							{ "field": "BoneId0" },
+							{ "field": "Color" },
+							{ "field": "Normal" },
+							{ "field": "UV0" }
+						]
+					}
+				}
+			],
+			"msaaSupport": "Both",
+			"+samplerStates": [
+				{
+					"samplerIndex": 0,
+					"textureFilter": "Point"
+				}
+			]
+		},
+		
+		"ljw_entity:ljw_entity_static": {
+			"+defines": [ "USE_OVERLAY" ],
+
+			"msaaSupport": "Both"
+		},
+		
+		"ljw_entity_nocull:ljw_entity": {
+			"+states": [ "DisableCulling" ]
+		},
+		
+		"ljw_entity_alphatest:ljw_entity_nocull": {
+			"+defines": [ "ALPHA_TEST" ],
+			"+samplerStates": [
+				{
+					"samplerIndex": 1,
+					"textureWrap": "Repeat"
+				}
+			],
+		  "msaaSupport": "Both"
+		},
+		
+		"ljw_entity_change_color:ljw_entity_nocull": {
+			"+defines": [
+				"USE_OVERLAY",
+				"USE_COLOR_MASK"
+			]
+		},
+		
+		"ljw_entity_emissive_alpha:ljw_entity_nocull": {
+			"+defines": [
+				"ALPHA_TEST",
+				"USE_EMISSIVE"
+			]
+		},
+		
+		"ljw_colorable:ljw_entity_change_color": {
+			"depthFunc": "LessEqual"
+		},
+		"ljw_transparent:ljw_entity_alphatest": {
+			"depthFunc": "LessEqual"
+		},
+		"ljw_translucent:ljw_entity_alphatest": {
+			"depthFunc": "LessEqual",
+			"+states": [ "Blending" ]
+		},
+		"ljw_glow_accent:ljw_entity_emissive_alpha": {
+			"depthFunc": "LessEqual"
+		},
+		"ljw_glow:ljw_entity_emissive_alpha": {
+			"+defines": [
+				"USE_ONLY_EMISSIVE"
+			],
+			"depthFunc": "LessEqual"
+		}
+	}
+}

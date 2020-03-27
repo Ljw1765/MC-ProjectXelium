@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.sentry": {
+			"arrays": {
+				"textures": {
+					"Array.skins": 	[ 	
+						"Texture.deactivated",
+						"Texture.active_c",
+						"Texture.active_i",
+						"Texture.active_p",
+						"Texture.active_d"
+					]
+				},
+				"geometries": {
+					"Array.geos": [
+						"Geometry.deactivated",
+						"Geometry.default",
+						"Geometry.default",
+						"Geometry.default",
+						"Geometry.default"
+					]
+				}
+			},
+			"geometry": "Array.geos[query.variant]",
+			"materials": [ 
+				{ "*": "Material.default" },
+				{ "hat": "Material.transparent" }
+			],
+			"textures": [ "Array.skins[query.variant]" ]
+		}
+	}
+}

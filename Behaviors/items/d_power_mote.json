@@ -1,0 +1,70 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ljw:d_power_mote"
+    },
+    
+    "components": {
+      "minecraft:hand_equipped": false,
+      "minecraft:stacked_by_data": false,
+      "minecraft:use_duration": 8,
+      "minecraft:foil": true,
+      "minecraft:food": {
+        "saturation_modifier": "supernatural",
+        "can_always_eat": true,
+        "cooldown_type": "chorusfruit",
+        "cooldown_time": 20,
+        "effects": [
+          {
+            "name": "strength",
+            "chance": 100.0,
+            "duration": 15,
+            "amplifier": 5
+          },
+		  {
+            "name": "resistance",
+            "chance": 100.0,
+            "duration": 15,
+            "amplifier": 3
+          },
+		  {
+            "name": "speed",
+            "chance": 100.0,
+            "duration": 15,
+            "amplifier": 4
+          },
+		  {
+            "name": "jump_boost",
+            "chance": 100.0,
+            "duration": 15,
+            "amplifier": 4
+          },
+		  {
+            "name": "haste",
+            "chance": 100.0,
+            "duration": 15,
+            "amplifier": 4
+          },
+		  {
+            "name": "hunger",
+            "chance": 100.0,
+            "duration": 30,
+            "amplifier": 50
+          },
+		  {
+            "name": "fatal_poison",
+            "chance": 100.0,
+            "duration": 30
+          },
+		  {
+            "name": "nausea",
+            "chance": 100.0,
+            "duration": 30,
+            "amplifier": 1
+          }
+        ]
+      }
+    }
+  }
+}

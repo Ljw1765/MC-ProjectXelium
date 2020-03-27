@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "ljw:c_fragment_block"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "III",
+      "III",
+      "III"
+    ],
+    "key": {
+      "I": {
+        "item": "ljw:c_fragment"
+      }
+    },
+    "result": {
+      "item": "ljw:c_fragment_block"
+    }
+  }
+}

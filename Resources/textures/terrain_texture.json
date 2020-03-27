@@ -1,0 +1,38 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "xelium_ore": {
+      "textures": [
+        "textures/blocks/xelium_ore"
+      ]
+    },
+    "xelium_block": {
+      "textures": [
+        "textures/blocks/xelium_block"
+      ]
+    },
+    "c_fragment_block": {
+      "textures": [
+        "textures/blocks/c_fragment_block"
+      ]
+    },
+    "p_fragment_block": {
+      "textures": [
+        "textures/blocks/p_fragment_block"
+      ]
+    },
+    "i_fragment_block": {
+      "textures": [
+        "textures/blocks/i_fragment_block"
+      ]
+    },
+    "boost_pad": {
+      "textures": [
+        "textures/blocks/boost_pad"
+      ]
+    }
+  }
+}

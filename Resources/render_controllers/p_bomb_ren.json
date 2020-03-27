@@ -1,0 +1,13 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.p_bomb": {
+			"geometry": "Geometry.default",
+			"materials": [ 
+				{ "*": "Material.default" },
+				{ "fuse_tip": "Material.glow" }
+			],
+			"textures": [ "Texture.default" ]
+		}
+	}
+}

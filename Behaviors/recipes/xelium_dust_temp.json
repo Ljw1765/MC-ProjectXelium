@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "ljw:xelium_dust_temp"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "III",
+      "IOI",
+      "III"
+    ],
+    "key":{
+      "I": {
+        "item": "minecraft:redstone"
+      },
+	  "O": {
+        "item": "minecraft:experience_bottle"
+      }
+    },
+    "result": {
+      "item": "ljw:xelium_dust",
+      "count": 8
+    }
+  }
+}

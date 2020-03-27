@@ -1,0 +1,141 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.ljw.tp_finished": {
+			"animation_length": 0.52,
+			"timeline": {
+				"0.2333": [
+					"@s did_teleport"
+				]
+			}
+		},
+		"animation.ljw.tp_to_mode_A": {
+			"animation_length": 0.52,
+			"timeline": {
+				"0.2333": [
+					"/tp @e[r=1,type=!ljw:warp_pad] @e[rm=2,type=ljw:warp_pad,c=1,tag=warp_pad_A]"
+				]
+			}
+		},
+		"animation.ljw.tp_to_mode_B": {
+			"animation_length": 0.52,
+			"timeline": {
+				"0.2333": [
+					"/tp @e[r=1,type=!ljw:warp_pad] @e[rm=2,type=ljw:warp_pad,c=1,tag=warp_pad_B]"
+				]
+			}
+		},
+		"animation.ljw.tp_to_mode_C": {
+			"animation_length": 0.52,
+			"timeline": {
+				"0.2333": [
+					"/tp @e[r=1,type=!ljw:warp_pad] @e[rm=2,type=ljw:warp_pad,c=1,tag=warp_pad_C]"
+				]
+			}
+		},
+		"animation.ljw.tp_to_mode_D": {
+			"animation_length": 0.52,
+			"timeline": {
+				"0.2333": [
+					"/tp @e[r=1,type=!ljw:warp_pad] @e[rm=2,type=ljw:warp_pad,c=1,tag=warp_pad_D]"
+				]
+			}
+		},
+		"animation.ljw.tp_to_mode_E": {
+			"animation_length": 0.52,
+			"timeline": {
+				"0.2333": [
+					"/tp @e[r=1,type=!ljw:warp_pad] @e[rm=2,type=ljw:warp_pad,c=1,tag=warp_pad_E]"
+				]
+			}
+		},
+		"animation.ljw.tp_to_mode_F": {
+			"animation_length": 0.52,
+			"timeline": {
+				"0.2333": [
+					"/tp @e[r=1,type=!ljw:warp_pad] @e[rm=2,type=ljw:warp_pad,c=1,tag=warp_pad_F]"
+				]
+			}
+		},
+		"animation.ljw.tp_to_mode_G": {
+			"animation_length": 0.52,
+			"timeline": {
+				"0.2333": [
+					"/tp @e[r=1,type=!ljw:warp_pad] @e[rm=2,type=ljw:warp_pad,c=1,tag=warp_pad_G]"
+				]
+			}
+		},
+		"animation.ljw.tp_to_mode_H": {
+			"animation_length": 0.52,
+			"timeline": {
+				"0.2333": [
+					"/tp @e[r=1,type=!ljw:warp_pad] @e[rm=2,type=ljw:warp_pad,c=1,tag=warp_pad_H]"
+				]
+			}
+		},
+		"animation.ljw.tp_to_mode_I": {
+			"animation_length": 0.52,
+			"timeline": {
+				"0.2333": [
+					"/tp @e[r=1,type=!ljw:warp_pad] @e[rm=2,type=ljw:warp_pad,c=1,tag=warp_pad_I]"
+				]
+			}
+		},
+		"animation.ljw.tp_to_mode_J": {
+			"animation_length": 0.52,
+			"timeline": {
+				"0.2333": [
+					"/tp @e[r=1,type=!ljw:warp_pad] @e[rm=2,type=ljw:warp_pad,c=1,tag=warp_pad_J]"
+				]
+			}
+		},
+		"animation.ljw.tp_to_mode_K": {
+			"animation_length": 0.52,
+			"timeline": {
+				"0.2333": [
+					"/tp @e[r=1,type=!ljw:warp_pad] @e[rm=2,type=ljw:warp_pad,c=1,tag=warp_pad_K]"
+				]
+			}
+		},
+		"animation.ljw.tp_to_mode_L": {
+			"animation_length": 0.52,
+			"timeline": {
+				"0.2333": [
+					"/tp @e[r=1,type=!ljw:warp_pad] @e[rm=2,type=ljw:warp_pad,c=1,tag=warp_pad_L]"
+				]
+			}
+		},
+		"animation.ljw.tp_to_mode_M": {
+			"animation_length": 0.52,
+			"timeline": {
+				"0.2333": [
+					"/tp @e[r=1,type=!ljw:warp_pad] @e[rm=2,type=ljw:warp_pad,c=1,tag=warp_pad_M]"
+				]
+			}
+		},
+		"animation.ljw.tp_to_mode_N": {
+			"animation_length": 0.52,
+			"timeline": {
+				"0.2333": [
+					"/tp @e[r=1,type=!ljw:warp_pad] @e[rm=2,type=ljw:warp_pad,c=1,tag=warp_pad_N]"
+				]
+			}
+		},
+		"animation.ljw.tp_to_mode_O": {
+			"animation_length": 0.52,
+			"timeline": {
+				"0.2333": [
+					"/tp @e[r=1,type=!ljw:warp_pad] @e[rm=2,type=ljw:warp_pad,c=1,tag=warp_pad_O]"
+				]
+			}
+		},
+		"animation.ljw.tp_to_mode_P": {
+			"animation_length": 0.52,
+			"timeline": {
+				"0.2333": [
+					"/tp @e[r=1,type=!ljw:warp_pad] @e[rm=2,type=ljw:warp_pad,c=1,tag=warp_pad_P]"
+				]
+			}
+		}
+	}
+}

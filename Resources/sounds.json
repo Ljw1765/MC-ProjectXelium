@@ -1,0 +1,14 @@
+{
+	"entity_sounds": {
+		"entities": {
+			"ljw:sentry": {
+				"volume": 1.0,
+				"pitch": [ 0.8, 1.2 ],
+				"events": {
+					"hurt": "mob.armor_stand.hit",
+					"death": "mob.armor_stand.break"
+				}
+			}
+		}
+	}
+}

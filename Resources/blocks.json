@@ -1,0 +1,31 @@
+{
+  "format_version": [
+    1,
+    1,
+    0
+  ],
+  "ljw:xelium_ore": {
+    "textures": "xelium_ore",
+    "sound": "stone"
+  },
+  "ljw:xelium_block": {
+    "textures": "xelium_block",
+    "sound": "metal"
+  },
+  "ljw:i_fragment_block": {
+    "textures": "i_fragment_block",
+    "sound": "metal"
+  },
+  "ljw:p_fragment_block": {
+    "textures": "p_fragment_block",
+    "sound": "metal"
+  },
+  "ljw:c_fragment_block": {
+    "textures": "c_fragment_block",
+    "sound": "metal"
+  },
+  "ljw:boost_pad": {
+    "textures": "boost_pad",
+    "sound": "metal"
+  }
+}

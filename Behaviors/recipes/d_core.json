@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "ljw:d_core"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "IFI",
+      "FFF",
+      "IFI"
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+	  "F": {
+        "item": "ljw:d_fragment"
+      }
+    },
+    "result": {
+      "item": "ljw:d_core"
+    }
+  }
+}

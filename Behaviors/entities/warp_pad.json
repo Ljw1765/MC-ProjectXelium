@@ -1,0 +1,672 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ljw:warp_pad",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			
+			"animations": {
+				"cont_mode": "controller.animation.ljw.warp_pad_mode",
+				"cont_teleport": "controller.animation.ljw.warp_pad_teleport",
+				
+				"tp_finish": "animation.ljw.tp_finished",
+				"tp_A": "animation.ljw.tp_to_mode_A",
+				"tp_B": "animation.ljw.tp_to_mode_B",
+				"tp_C": "animation.ljw.tp_to_mode_C",
+				"tp_D": "animation.ljw.tp_to_mode_D",
+				"tp_E": "animation.ljw.tp_to_mode_E",
+				"tp_F": "animation.ljw.tp_to_mode_F",
+				"tp_G": "animation.ljw.tp_to_mode_G",
+				"tp_H": "animation.ljw.tp_to_mode_H",
+				"tp_I": "animation.ljw.tp_to_mode_I",
+				"tp_J": "animation.ljw.tp_to_mode_J",
+				"tp_K": "animation.ljw.tp_to_mode_K",
+				"tp_L": "animation.ljw.tp_to_mode_L",
+				"tp_M": "animation.ljw.tp_to_mode_M",
+				"tp_N": "animation.ljw.tp_to_mode_N",
+				"tp_O": "animation.ljw.tp_to_mode_O",
+				"tp_P": "animation.ljw.tp_to_mode_P"
+			},
+			"scripts": {
+				"animate": [
+					"cont_mode",
+					"cont_teleport"
+				]
+			}
+		},
+
+		"component_groups": {
+			"dormant": {
+				"minecraft:mark_variant": {
+					"value": 0
+				}
+			},
+			"teleport": {
+				"minecraft:mark_variant": {
+					"value": 1
+				}
+			},
+			
+			"mode_A": {
+				"minecraft:variant": {
+					"value": 1
+				},
+				"minecraft:color": {
+					"value": 14
+				}
+			},
+			"mode_B": {
+				"minecraft:variant": {
+					"value": 2
+				},
+				"minecraft:color": {
+					"value": 13
+				}
+			},
+			"mode_C": {
+				"minecraft:variant": {
+					"value": 3
+				},
+				"minecraft:color": {
+					"value": 12
+				}
+			},
+			"mode_D": {
+				"minecraft:variant": {
+					"value": 4
+				},
+				"minecraft:color": {
+					"value": 11
+				}
+			},
+			"mode_E": {
+				"minecraft:variant": {
+					"value": 5
+				},
+				"minecraft:color": {
+					"value": 10
+				}
+			},
+			"mode_F": {
+				"minecraft:variant": {
+					"value": 6
+				},
+				"minecraft:color": {
+					"value": 9
+				}
+			},
+			"mode_G": {
+				"minecraft:variant": {
+					"value": 7
+				},
+				"minecraft:color": {
+					"value": 8
+				}
+			},
+			"mode_H": {
+				"minecraft:variant": {
+					"value": 8
+				},
+				"minecraft:color": {
+					"value": 7
+				}
+			},
+			"mode_I": {
+				"minecraft:variant": {
+					"value": 9
+				},
+				"minecraft:color": {
+					"value": 6
+				}
+			},
+			"mode_J": {
+				"minecraft:variant": {
+					"value": 10
+				},
+				"minecraft:color": {
+					"value": 5
+				}
+			},
+			"mode_K": {
+				"minecraft:variant": {
+					"value": 11
+				},
+				"minecraft:color": {
+					"value": 4
+				}
+			},
+			"mode_L": {
+				"minecraft:variant": {
+					"value": 12
+				},
+				"minecraft:color": {
+					"value": 3
+				}
+			},
+			"mode_M": {
+				"minecraft:variant": {
+					"value": 13
+				},
+				"minecraft:color": {
+					"value": 2
+				}
+			},
+			"mode_N": {
+				"minecraft:variant": {
+					"value": 14
+				},
+				"minecraft:color": {
+					"value": 1
+				}
+			},
+			"mode_O": {
+				"minecraft:variant": {
+					"value": 15
+				},
+				"minecraft:color": {
+					"value": 0
+				}
+			},
+			"mode_P": {
+				"minecraft:variant": {
+					"value": 16
+				},
+				"minecraft:color": {
+					"value": 15
+				}
+			},
+			
+			"despawn": {
+				"minecraft:despawn": {
+				}
+			}
+		},
+	
+		"components": {
+			"minecraft:health": {
+				"value": 999,
+				"max": 999
+			},
+			"minecraft:type_family": {
+				"family": [ "warp_pad", "inanimate" ]
+			},
+			"minecraft:collision_box": {
+				"width": 0.2,
+				"height": 0.2
+			},
+			"minecraft:variant": {
+				"value": 0
+			},
+			"minecraft:mark_variant": {
+				"value": 0
+			},
+			"minecraft:physics": {
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:damage_sensor": [
+				{
+					"cause": "attack",
+					"deals_damage": false
+				},
+				{
+					"cause": "suffocation",
+					"deals_damage": false
+				},
+				{
+					"cause": "magic",
+					"deals_damage": false
+				},
+				{
+					"cause": "wither",
+					"deals_damage": false
+				},
+				{
+					"cause": "fall",
+					"deals_damage": false
+				},
+				{
+					"cause": "thorns",
+					"deals_damage": false
+				},
+				{
+					"cause": "lava",
+					"deals_damage": false
+				},
+				{
+					"cause": "fire",
+					"deals_damage": false
+				},
+				{
+					"cause": "fire_tick",
+					"deals_damage": false
+				},
+				{
+					"cause": "block_explosion",
+					"deals_damage": false
+				},
+				{
+					"cause": "entity_explosion",
+					"deals_damage": false
+				},
+				{
+					"cause": "drowning",
+					"deals_damage": false
+				}
+			],
+			"minecraft:interact": [
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{ "test": "is_family", "subject": "other", "operator": "==", "value": "player" },
+								{ "test": "has_equipment", "subject": "other", "operator": "==", "value": "minecraft:dye:1" }
+							]
+						},
+						"event": "switch_to_mode_A",
+						"target": "self"
+					},
+					"interact_text": "Set"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{ "test": "is_family", "subject": "other", "operator": "==", "value": "player" },
+								{ "test": "has_equipment", "subject": "other", "operator": "==", "value": "minecraft:dye:2" }
+							]
+						},
+						"event": "switch_to_mode_B",
+						"target": "self"
+					},
+					"interact_text": "Set"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{ "test": "is_family", "subject": "other", "operator": "==", "value": "player" },
+								{
+									"any_of": [
+										{ "test": "has_equipment", "subject": "other", "operator": "==", "value": "minecraft:dye:3" },
+										{ "test": "has_equipment", "subject": "other", "operator": "==", "value": "minecraft:dye:17" }
+									]
+								}
+							]
+						},
+						"event": "switch_to_mode_C",
+						"target": "self"
+					},
+					"interact_text": "Set"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{ "test": "is_family", "subject": "other", "operator": "==", "value": "player" },
+								{
+									"any_of": [
+										{ "test": "has_equipment", "subject": "other", "operator": "==", "value": "minecraft:dye:4" },
+										{ "test": "has_equipment", "subject": "other", "operator": "==", "value": "minecraft:dye:18" }
+									]
+								}
+							]
+						},
+						"event": "switch_to_mode_D",
+						"target": "self"
+					},
+					"interact_text": "Set"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{ "test": "is_family", "subject": "other", "operator": "==", "value": "player" },
+								{ "test": "has_equipment", "subject": "other", "operator": "==", "value": "minecraft:dye:5" }
+							]
+						},
+						"event": "switch_to_mode_E",
+						"target": "self"
+					},
+					"interact_text": "Set"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{ "test": "is_family", "subject": "other", "operator": "==", "value": "player" },
+								{ "test": "has_equipment", "subject": "other", "operator": "==", "value": "minecraft:dye:6" }
+							]
+						},
+						"event": "switch_to_mode_F",
+						"target": "self"
+					},
+					"interact_text": "Set"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{ "test": "is_family", "subject": "other", "operator": "==", "value": "player" },
+								{ "test": "has_equipment", "subject": "other", "operator": "==", "value": "minecraft:dye:7" }
+							]
+						},
+						"event": "switch_to_mode_G",
+						"target": "self"
+					},
+					"interact_text": "Set"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{ "test": "is_family", "subject": "other", "operator": "==", "value": "player" },
+								{ "test": "has_equipment", "subject": "other", "operator": "==", "value": "minecraft:dye:8" }
+							]
+						},
+						"event": "switch_to_mode_H",
+						"target": "self"
+					},
+					"interact_text": "Set"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{ "test": "is_family", "subject": "other", "operator": "==", "value": "player" },
+								{ "test": "has_equipment", "subject": "other", "operator": "==", "value": "minecraft:dye:9" }
+							]
+						},
+						"event": "switch_to_mode_I",
+						"target": "self"
+					},
+					"interact_text": "Set"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{ "test": "is_family", "subject": "other", "operator": "==", "value": "player" },
+								{ "test": "has_equipment", "subject": "other", "operator": "==", "value": "minecraft:dye:10" }
+							]
+						},
+						"event": "switch_to_mode_J",
+						"target": "self"
+					},
+					"interact_text": "Set"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{ "test": "is_family", "subject": "other", "operator": "==", "value": "player" },
+								{ "test": "has_equipment", "subject": "other", "operator": "==", "value": "minecraft:dye:11" }
+							]
+						},
+						"event": "switch_to_mode_K",
+						"target": "self"
+					},
+					"interact_text": "Set"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{ "test": "is_family", "subject": "other", "operator": "==", "value": "player" },
+								{ "test": "has_equipment", "subject": "other", "operator": "==", "value": "minecraft:dye:12" }
+							]
+						},
+						"event": "switch_to_mode_L",
+						"target": "self"
+					},
+					"interact_text": "Set"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{ "test": "is_family", "subject": "other", "operator": "==", "value": "player" },
+								{ "test": "has_equipment", "subject": "other", "operator": "==", "value": "minecraft:dye:13" }
+							]
+						},
+						"event": "switch_to_mode_M",
+						"target": "self"
+					},
+					"interact_text": "Set"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{ "test": "is_family", "subject": "other", "operator": "==", "value": "player" },
+								{ "test": "has_equipment", "subject": "other", "operator": "==", "value": "minecraft:dye:14" }
+							]
+						},
+						"event": "switch_to_mode_N",
+						"target": "self"
+					},
+					"interact_text": "Set"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{ "test": "is_family", "subject": "other", "operator": "==", "value": "player" },
+								{
+									"any_of": [
+										{ "test": "has_equipment", "subject": "other", "operator": "==", "value": "minecraft:dye:15" },
+										{ "test": "has_equipment", "subject": "other", "operator": "==", "value": "minecraft:dye:19" }
+									]
+								}
+							]
+						},
+						"event": "switch_to_mode_O",
+						"target": "self"
+					},
+					"interact_text": "Set"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{ "test": "is_family", "subject": "other", "operator": "==", "value": "player" },
+								{
+									"any_of": [
+										{ "test": "has_equipment", "subject": "other", "operator": "==", "value": "minecraft:dye:0" },
+										{ "test": "has_equipment", "subject": "other", "operator": "==", "value": "minecraft:dye:16" }
+									]
+								}
+							]
+						},
+						"event": "switch_to_mode_P",
+						"target": "self"
+					},
+					"interact_text": "Set"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{ "test": "is_family", "subject": "other", "operator": "==", "value": "player" },
+								{ "test": "has_equipment", "subject": "other", "operator": "==", "value": "minecraft:shears" }
+							]
+						},
+						"event": "despawn",
+						"target": "self"
+					},
+					"add_items": {
+						"table": "loot_tables/entities/warp_pad.json"
+					},
+					"interact_text": "Pick Up"
+				},
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{ "test": "is_family", "subject": "other", "operator": "==", "value": "player" },
+								{ "test": "is_mark_variant", "subject": "self", "operator": "==", "value": 0 },
+								{ "test": "is_variant", "subject": "self", "operator": "!=", "value": 0 }
+							]
+						},
+						"event": "do_teleport",
+						"target": "self"
+					},
+					"interact_text": "Teleport"
+				}
+			]
+		},
+		
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"dormant"
+					]
+				}
+			},
+			"despawn": {
+				"sequence": [
+					{
+						"add": {
+							"component_groups": [
+								"despawn"
+							]
+						}
+					}
+				]
+			},
+			
+			"do_teleport": {
+				"add": {
+					"component_groups": [
+						"teleport"
+					]
+				}
+			},
+			"did_teleport": {
+				"add": {
+					"component_groups": [
+						"dormant"
+					]
+				}
+			},
+			
+			"switch_to_mode_A": {
+				"add": {
+					"component_groups": [
+						"mode_A"
+					]
+				}
+			},
+			"switch_to_mode_B": {
+				"add": {
+					"component_groups": [
+						"mode_B"
+					]
+				}
+			},
+			"switch_to_mode_C": {
+				"add": {
+					"component_groups": [
+						"mode_C"
+					]
+				}
+			},
+			"switch_to_mode_D": {
+				"add": {
+					"component_groups": [
+						"mode_D"
+					]
+				}
+			},
+			"switch_to_mode_E": {
+				"add": {
+					"component_groups": [
+						"mode_E"
+					]
+				}
+			},
+			"switch_to_mode_F": {
+				"add": {
+					"component_groups": [
+						"mode_F"
+					]
+				}
+			},
+			"switch_to_mode_G": {
+				"add": {
+					"component_groups": [
+						"mode_G"
+					]
+				}
+			},
+			"switch_to_mode_H": {
+				"add": {
+					"component_groups": [
+						"mode_H"
+					]
+				}
+			},
+			"switch_to_mode_I": {
+				"add": {
+					"component_groups": [
+						"mode_I"
+					]
+				}
+			},
+			"switch_to_mode_J": {
+				"add": {
+					"component_groups": [
+						"mode_J"
+					]
+				}
+			},
+			"switch_to_mode_K": {
+				"add": {
+					"component_groups": [
+						"mode_K"
+					]
+				}
+			},
+			"switch_to_mode_L": {
+				"add": {
+					"component_groups": [
+						"mode_L"
+					]
+				}
+			},
+			"switch_to_mode_M": {
+				"add": {
+					"component_groups": [
+						"mode_M"
+					]
+				}
+			},
+			"switch_to_mode_N": {
+				"add": {
+					"component_groups": [
+						"mode_N"
+					]
+				}
+			},
+			"switch_to_mode_O": {
+				"add": {
+					"component_groups": [
+						"mode_O"
+					]
+				}
+			},
+			"switch_to_mode_P": {
+				"add": {
+					"component_groups": [
+						"mode_P"
+					]
+				}
+			}
+		}
+	}
+}

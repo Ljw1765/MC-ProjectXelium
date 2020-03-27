@@ -1,0 +1,61 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.player.p_bomb": {
+			"states": {
+				"default": {
+					"transitions": [
+						{ "creating_bomb": "query.variant == 1" }
+					]
+				},
+				
+				"creating_bomb": {
+					"animations": [
+						"p_bomb_create"
+					],
+					"transitions": [
+						{ "default": "query.any_animation_finished" }
+					]
+				}
+			}
+		},
+		
+		"controller.animation.player.warp_pad": {
+			"states": {
+				"default": {
+					"transitions": [
+						{ "creating_warp_pad": "query.variant == 2" }
+					]
+				},
+				
+				"creating_warp_pad": {
+					"animations": [
+						"warp_pad_create"
+					],
+					"transitions": [
+						{ "default": "query.any_animation_finished" }
+					]
+				}
+			}
+		},
+		
+		"controller.animation.player.sentry": {
+			"states": {
+				"default": {
+					"transitions": [
+						{ "creating_sentry": "query.variant == 3" }
+					]
+				},
+				
+				"creating_sentry": {
+					"animations": [
+						"sentry_create"
+					],
+					"transitions": [
+						{ "default": "query.any_animation_finished" }
+					]
+				}
+			}
+		}
+	}
+}

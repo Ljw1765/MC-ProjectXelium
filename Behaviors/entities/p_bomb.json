@@ -1,0 +1,134 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ljw:p_bomb",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+
+		"component_groups": {
+			"from_explosion": {
+				"minecraft:explode": {
+					"fuse_length": {
+						"range_min": 0.0,
+						"range_max": 0.2
+					},
+					"fuse_lit": true,
+					"power": 1.5,
+					"causes_fire": false
+				}
+			},
+			"defused": {
+				"minecraft:despawn": {
+				}
+			}
+		},
+	
+		"components": {
+			"minecraft:health": {
+				"value": 999,
+				"max": 999
+			},
+			"minecraft:type_family": {
+				"family": [ "tnt", "inanimate", "p_bomb" ]
+			},
+			"minecraft:collision_box": {
+				"width": 0.2,
+				"height": 0.2
+			},
+			"minecraft:explode": {
+				"fuse_length": 4,
+				"fuse_lit": true,
+				"power": 1.5,
+				"causes_fire": false
+			},
+			"minecraft:physics": {
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:damage_sensor": [
+				{
+					"cause": "suffocation",
+					"deals_damage": false
+				},
+				{
+					"cause": "magic",
+					"deals_damage": false
+				},
+				{
+					"cause": "wither",
+					"deals_damage": false
+				},
+				{
+					"cause": "fall",
+					"deals_damage": false
+				},
+				{
+					"cause": "thorns",
+					"deals_damage": false
+				},
+				{
+					"cause": "lava",
+					"deals_damage": false
+				},
+				{
+					"cause": "fire",
+					"deals_damage": false
+				},
+				{
+					"cause": "fire_tick",
+					"deals_damage": false
+				},
+				{
+					"cause": "block_explosion",
+					"event": "from_explosion",
+					"target": "self"
+				},
+				{
+					"cause": "entity_explosion",
+					"event": "from_explosion",
+					"target": "self"
+				},
+				{
+					"cause": "drowning",
+					"deals_damage": false
+				}
+			],
+			"minecraft:interact": [
+				{
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{ "test": "is_family", "subject": "other", "operator": "==", "value": "player" }
+							]
+						},
+						"event": "defuse",
+						"target": "self"
+					},
+					"interact_text": "Defuse"
+				}
+			]
+		},
+		
+		"events": {
+			"from_explosion": {
+				"add": {
+					"component_groups": [
+						"from_explosion"
+					]
+				}
+			},
+			"defuse": {
+				"add": {
+					"component_groups": [
+						"defused"
+					]
+				}
+			}
+		}
+	}
+}

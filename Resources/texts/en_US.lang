@@ -1,0 +1,35 @@
+﻿tile.ljw:xelium_ore.name=Xelium Ore
+tile.ljw:xelium_block.name=Xelium Block
+item.ljw:xelium_dust.name=Xelium Dust
+item.ljw:xelium_power_mote.name=Xelium Mote
+
+item.ljw:c_fragment.name=Shield Fragment
+tile.ljw:c_fragment_block.name=Shield Fragment Block
+item.ljw:c_core.name=Shield Core
+item.ljw:c_power_mote.name=Shield Mote
+
+item.ljw:i_fragment.name=Speed Fragment
+tile.ljw:i_fragment_block.name=Speed Fragment Block
+item.ljw:i_core.name=Speed Core
+item.ljw:i_power_mote.name=Speed Mote
+
+item.ljw:p_fragment.name=Power Fragment
+tile.ljw:p_fragment_block.name=Power Fragment Block
+item.ljw:p_core.name=Power Core
+item.ljw:p_power_mote.name=Power Mote
+
+item.ljw:d_fragment.name=Void Fragment
+item.ljw:d_core.name=Void Core
+item.ljw:d_power_mote.name=Void Mote
+
+item.spawn_egg.entity.ljw:sentry.name=Sentry Kit
+item.ljw:sentry_kit.name=Sentry Kit
+entity.ljw:sentry.name=Sentry
+
+item.ljw:p_bomb.name=Mini Power Bomb
+entity.ljw:p_bomb.name=Mini Power Bomb
+
+item.ljw:warp_pad.name=Warp Pad
+entity.ljw:warp_pad.name=Warp Pad
+
+tile.ljw:boost_pad.name=Accelerator

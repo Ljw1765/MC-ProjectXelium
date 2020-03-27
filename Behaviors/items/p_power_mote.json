@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ljw:p_power_mote"
+    },
+    
+    "components": {
+      "minecraft:hand_equipped": false,
+      "minecraft:stacked_by_data": false,
+      "minecraft:use_duration": 8,
+      "minecraft:foil": true,
+      "minecraft:food": {
+        "saturation_modifier": "supernatural",
+        "can_always_eat": true,
+        "cooldown_type": "chorusfruit",
+        "cooldown_time": 20,
+        "effects": [
+          {
+            "name": "strength",
+            "chance": 100.0,
+            "duration": 15,
+            "amplifier": 2
+          },
+		  {
+            "name": "haste",
+            "chance": 100.0,
+            "duration": 15,
+            "amplifier": 2
+          }
+        ]
+      }
+    }
+  }
+}

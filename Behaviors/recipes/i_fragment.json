@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "ljw:i_fragment"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "II0",
+      "00I",
+      "II0"
+    ],
+    "key": {
+      "I": {
+        "item": "ljw:xelium_dust"
+      }
+    },
+    "result": {
+      "item": "ljw:i_fragment",
+	  "count": 1
+    }
+  }
+}

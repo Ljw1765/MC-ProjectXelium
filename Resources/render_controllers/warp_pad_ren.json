@@ -1,0 +1,28 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.warp_pad": {
+			"arrays": {
+				"textures": {
+					"Array.skins": 	[ 	
+						"Texture.default",
+						"Texture.active",
+						"Texture.warped"
+					]
+				},
+				"materials": {
+					"Array.material": [
+						"Material.default",
+						"Material.active",
+						"Material.warped"
+					]
+				}
+			},
+			"geometry": "Geometry.default",
+			"materials": [ 
+				{ "*": "Array.material[(query.variant > 0) + (query.mark_variant > 0)]" }
+			],
+			"textures": [ "Array.skins[(query.variant > 0) + (query.mark_variant > 0)]" ]
+		}
+	}
+}

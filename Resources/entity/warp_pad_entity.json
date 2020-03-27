@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ljw:warp_pad",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "entity_alphatest",
+        "active": "ljw_colorable",
+        "warped": "ljw_glow_accent"
+      },
+      "textures": {
+        "default": "textures/entity/warp_pad/default",
+        "active": "textures/entity/warp_pad/active",
+        "warped": "textures/entity/warp_pad/warped"
+      },
+      "geometry": {
+        "default": "geometry.warp_pad"
+      },
+      "render_controllers": [ "controller.render.warp_pad" ],
+      "enable_attachables": true
+    }
+  }
+}

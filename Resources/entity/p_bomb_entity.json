@@ -1,0 +1,21 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ljw:p_bomb",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "entity_alphatest",
+        "glow": "ljw_glow"
+      },
+      "textures": {
+        "default": "textures/entity/p_bomb"
+      },
+      "geometry": {
+        "default": "geometry.p_bomb"
+      },
+      "render_controllers": [ "controller.render.p_bomb" ],
+      "enable_attachables": true
+    }
+  }
+}

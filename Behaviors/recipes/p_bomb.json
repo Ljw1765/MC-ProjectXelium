@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "ljw:p_bomb"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "I",
+      "F"
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:gunpowder"
+      },
+	  "F": {
+        "item": "ljw:p_fragment"
+      }
+    },
+    "result": {
+      "item": "ljw:p_bomb",
+      "count": 4
+    }
+  }
+}

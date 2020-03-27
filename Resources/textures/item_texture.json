@@ -1,0 +1,64 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "xelium_dust": {
+      "textures": "textures/items/xelium_dust"
+    },
+	"xelium_power_mote": {
+      "textures": "textures/items/xelium_power_mote"
+    },
+	
+	"c_fragment": {
+      "textures": "textures/items/c_fragment"
+    },
+    "c_core": {
+      "textures": "textures/items/c_core"
+    },
+    "c_power_mote": {
+      "textures": "textures/items/c_power_mote"
+    },
+	
+    "i_fragment": {
+      "textures": "textures/items/i_fragment"
+    },
+    "i_core": {
+      "textures": "textures/items/i_core"
+    },
+    "i_power_mote": {
+      "textures": "textures/items/i_power_mote"
+    },
+	
+    "p_fragment": {
+      "textures": "textures/items/p_fragment"
+    },
+    "p_core": {
+      "textures": "textures/items/p_core"
+    },
+    "p_power_mote": {
+      "textures": "textures/items/p_power_mote"
+    },
+	
+	"d_fragment": {
+      "textures": "textures/items/d_fragment"
+    },
+	"d_core": {
+      "textures": "textures/items/d_core"
+    },
+	"d_power_mote": {
+      "textures": "textures/items/d_power_mote"
+    },
+	
+	"sentry_kit": {
+		"textures": "textures/items/sentry_kit"
+	},
+	
+	"p_bomb": {
+		"textures": "textures/items/p_bomb"
+	},
+	
+	"warp_pad": {
+		"textures": "textures/items/warp_pad"
+	}
+  }
+}

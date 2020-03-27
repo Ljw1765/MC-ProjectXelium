@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.sentry.shield_on_back": {
+			"loop": true,
+			"bones": {
+				"armShield": {
+					"scale": [0, 0, 0]
+				}
+			}
+		},
+		"animation.sentry.core_anim": {
+			"loop": true,
+			"bones": {
+				"core": {
+					"position": [0, "Math.sin(query.life_time * 1) * -1", 0]
+				}
+			}
+		},
+		"animation.sentry.shield_in_hand": {
+			"loop": true,
+			"bones": {
+				"backShield": {
+					"scale": [0, 0, 0]
+				},
+				"lowerArm": {
+					"rotation": [-90, 0, 0]
+				}
+			}
+		}
+	}
+}

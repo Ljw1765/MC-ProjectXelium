@@ -1,0 +1,7 @@
+[
+  {
+    "flipbook_texture": "textures/blocks/boost_pad",
+    "atlas_tile": "boost_pad",
+    "ticks_per_frame": 2
+  }  
+]

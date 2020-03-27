@@ -1,0 +1,404 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.ljw.warp_pad_mode": {
+			"states": {
+				"default": {
+					"on_entry": [
+						"/tag @s add warp_pad_unset"
+					],
+					"on_exit": [
+						"/tag @s remove warp_pad_unset"
+					],
+					"transitions": [
+						{ "mode_A": "query.variant == 1" },
+						{ "mode_B": "query.variant == 2" },
+						{ "mode_C": "query.variant == 3" },
+						{ "mode_D": "query.variant == 4" },
+						{ "mode_E": "query.variant == 5" },
+						{ "mode_F": "query.variant == 6" },
+						{ "mode_G": "query.variant == 7" },
+						{ "mode_H": "query.variant == 8" },
+						{ "mode_I": "query.variant == 9" },
+						{ "mode_J": "query.variant == 10" },
+						{ "mode_K": "query.variant == 11" },
+						{ "mode_L": "query.variant == 12" },
+						{ "mode_M": "query.variant == 13" },
+						{ "mode_N": "query.variant == 14" },
+						{ "mode_O": "query.variant == 15" },
+						{ "mode_P": "query.variant == 16" }
+					]
+				},
+				
+				"mode_A": {
+					"on_entry": [
+						"/tag @s add warp_pad_A"
+					],
+					"on_exit": [
+						"/tag @s remove warp_pad_A"
+					],
+					"transitions": [
+						{ "default": "query.variant != 1" }
+					]
+				},
+				
+				"mode_B": {
+					"on_entry": [
+						"/tag @s add warp_pad_B"
+					],
+					"on_exit": [
+						"/tag @s remove warp_pad_B"
+					],
+					"transitions": [
+						{ "default": "query.variant != 2" }
+					]
+				},
+				
+				"mode_C": {
+					"on_entry": [
+						"/tag @s add warp_pad_C"
+					],
+					"on_exit": [
+						"/tag @s remove warp_pad_C"
+					],
+					"transitions": [
+						{ "default": "query.variant != 3" }
+					]
+				},
+				
+				"mode_D": {
+					"on_entry": [
+						"/tag @s add warp_pad_D"
+					],
+					"on_exit": [
+						"/tag @s remove warp_pad_D"
+					],
+					"transitions": [
+						{ "default": "query.variant != 4" }
+					]
+				},
+				
+				"mode_E": {
+					"on_entry": [
+						"/tag @s add warp_pad_E"
+					],
+					"on_exit": [
+						"/tag @s remove warp_pad_E"
+					],
+					"transitions": [
+						{ "default": "query.variant != 5" }
+					]
+				},
+				
+				"mode_F": {
+					"on_entry": [
+						"/tag @s add warp_pad_F"
+					],
+					"on_exit": [
+						"/tag @s remove warp_pad_F"
+					],
+					"transitions": [
+						{ "default": "query.variant != 6" }
+					]
+				},
+				
+				"mode_G": {
+					"on_entry": [
+						"/tag @s add warp_pad_G"
+					],
+					"on_exit": [
+						"/tag @s remove warp_pad_G"
+					],
+					"transitions": [
+						{ "default": "query.variant != 7" }
+					]
+				},
+				
+				"mode_H": {
+					"on_entry": [
+						"/tag @s add warp_pad_H"
+					],
+					"on_exit": [
+						"/tag @s remove warp_pad_H"
+					],
+					"transitions": [
+						{ "default": "query.variant != 8" }
+					]
+				},
+				
+				"mode_I": {
+					"on_entry": [
+						"/tag @s add warp_pad_I"
+					],
+					"on_exit": [
+						"/tag @s remove warp_pad_I"
+					],
+					"transitions": [
+						{ "default": "query.variant != 9" }
+					]
+				},
+				
+				"mode_J": {
+					"on_entry": [
+						"/tag @s add warp_pad_J"
+					],
+					"on_exit": [
+						"/tag @s remove warp_pad_J"
+					],
+					"transitions": [
+						{ "default": "query.variant != 10" }
+					]
+				},
+				
+				"mode_K": {
+					"on_entry": [
+						"/tag @s add warp_pad_K"
+					],
+					"on_exit": [
+						"/tag @s remove warp_pad_K"
+					],
+					"transitions": [
+						{ "default": "query.variant != 11" }
+					]
+				},
+				
+				"mode_L": {
+					"on_entry": [
+						"/tag @s add warp_pad_L"
+					],
+					"on_exit": [
+						"/tag @s remove warp_pad_L"
+					],
+					"transitions": [
+						{ "default": "query.variant != 12" }
+					]
+				},
+				
+				"mode_M": {
+					"on_entry": [
+						"/tag @s add warp_pad_M"
+					],
+					"on_exit": [
+						"/tag @s remove warp_pad_M"
+					],
+					"transitions": [
+						{ "default": "query.variant != 13" }
+					]
+				},
+				
+				"mode_N": {
+					"on_entry": [
+						"/tag @s add warp_pad_N"
+					],
+					"on_exit": [
+						"/tag @s remove warp_pad_N"
+					],
+					"transitions": [
+						{ "default": "query.variant != 14" }
+					]
+				},
+				
+				"mode_O": {
+					"on_entry": [
+						"/tag @s add warp_pad_O"
+					],
+					"on_exit": [
+						"/tag @s remove warp_pad_O"
+					],
+					"transitions": [
+						{ "default": "query.variant != 15" }
+					]
+				},
+				
+				"mode_P": {
+					"on_entry": [
+						"/tag @s add warp_pad_P"
+					],
+					"on_exit": [
+						"/tag @s remove warp_pad_P"
+					],
+					"transitions": [
+						{ "default": "query.variant != 16" }
+					]
+				}
+			}
+		},
+		"controller.animation.ljw.warp_pad_teleport": {
+			"states": {
+				"default": {
+					"transitions": [
+						{ "warp_to_A": "query.variant == 1 && query.mark_variant == 1" },
+						{ "warp_to_B": "query.variant == 2 && query.mark_variant == 1" },
+						{ "warp_to_C": "query.variant == 3 && query.mark_variant == 1" },
+						{ "warp_to_D": "query.variant == 4 && query.mark_variant == 1" },
+						{ "warp_to_E": "query.variant == 5 && query.mark_variant == 1" },
+						{ "warp_to_F": "query.variant == 6 && query.mark_variant == 1" },
+						{ "warp_to_G": "query.variant == 7 && query.mark_variant == 1" },
+						{ "warp_to_H": "query.variant == 8 && query.mark_variant == 1" },
+						{ "warp_to_I": "query.variant == 9 && query.mark_variant == 1" },
+						{ "warp_to_J": "query.variant == 10 && query.mark_variant == 1" },
+						{ "warp_to_K": "query.variant == 11 && query.mark_variant == 1" },
+						{ "warp_to_L": "query.variant == 12 && query.mark_variant == 1" },
+						{ "warp_to_M": "query.variant == 13 && query.mark_variant == 1" },
+						{ "warp_to_N": "query.variant == 14 && query.mark_variant == 1" },
+						{ "warp_to_O": "query.variant == 15 && query.mark_variant == 1" },
+						{ "warp_to_P": "query.variant == 16 && query.mark_variant == 1" }
+					]
+				},
+				
+				"finished_teleport": {
+					"animations": [
+						"tp_finish"
+					],
+					"transitions": [
+						{ "default": "query.any_animation_finished" }
+					]
+				},
+				
+				"warp_to_A": {
+					"animations": [
+						"tp_A"
+					],
+					"transitions": [
+						{ "finished_teleport": "query.any_animation_finished" }
+					]
+				},
+				
+				"warp_to_B": {
+					"animations": [
+						"tp_B"
+					],
+					"transitions": [
+						{ "finished_teleport": "query.any_animation_finished" }
+					]
+				},
+				
+				"warp_to_C": {
+					"animations": [
+						"tp_C"
+					],
+					"transitions": [
+						{ "finished_teleport": "query.any_animation_finished" }
+					]
+				},
+				
+				"warp_to_D": {
+					"animations": [
+						"tp_D"
+					],
+					"transitions": [
+						{ "finished_teleport": "query.any_animation_finished" }
+					]
+				},
+				
+				"warp_to_E": {
+					"animations": [
+						"tp_E"
+					],
+					"transitions": [
+						{ "finished_teleport": "query.any_animation_finished" }
+					]
+				},
+				
+				"warp_to_F": {
+					"animations": [
+						"tp_F"
+					],
+					"transitions": [
+						{ "finished_teleport": "query.any_animation_finished" }
+					]
+				},
+				
+				"warp_to_G": {
+					"animations": [
+						"tp_G"
+					],
+					"transitions": [
+						{ "finished_teleport": "query.any_animation_finished" }
+					]
+				},
+				
+				"warp_to_H": {
+					"animations": [
+						"tp_H"
+					],
+					"transitions": [
+						{ "finished_teleport": "query.any_animation_finished" }
+					]
+				},
+				
+				"warp_to_I": {
+					"animations": [
+						"tp_I"
+					],
+					"transitions": [
+						{ "finished_teleport": "query.any_animation_finished" }
+					]
+				},
+				
+				"warp_to_J": {
+					"animations": [
+						"tp_J"
+					],
+					"transitions": [
+						{ "finished_teleport": "query.any_animation_finished" }
+					]
+				},
+				
+				"warp_to_K": {
+					"animations": [
+						"tp_K"
+					],
+					"transitions": [
+						{ "finished_teleport": "query.any_animation_finished" }
+					]
+				},
+				
+				"warp_to_L": {
+					"animations": [
+						"tp_L"
+					],
+					"transitions": [
+						{ "finished_teleport": "query.any_animation_finished" }
+					]
+				},
+				
+				"warp_to_M": {
+					"animations": [
+						"tp_M"
+					],
+					"transitions": [
+						{ "finished_teleport": "query.any_animation_finished" }
+					]
+				},
+				
+				"warp_to_N": {
+					"animations": [
+						"tp_N"
+					],
+					"transitions": [
+						{ "finished_teleport": "query.any_animation_finished" }
+					]
+				},
+				
+				"warp_to_O": {
+					"animations": [
+						"tp_O"
+					],
+					"transitions": [
+						{ "finished_teleport": "query.any_animation_finished" }
+					]
+				},
+				
+				"warp_to_P": {
+					"animations": [
+						"tp_P"
+					],
+					"transitions": [
+						{ "finished_teleport": "query.any_animation_finished" }
+					]
+				}
+			}
+		}
+	}
+}

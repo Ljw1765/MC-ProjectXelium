@@ -1,0 +1,24 @@
+{
+	"format_version" : 1,
+	"header" : {
+		"description" : "Adds a mysterious new element!",
+		"name" : "Project X §6[Dev]",
+		"uuid" : "e842ec06-c9b6-41d6-8ec5-db896986cea6",
+		"version" : [ 0, 0, 1 ],
+		"min_engine_version": [1, 8, 0]
+	},
+	"modules" : [
+		{
+			"description" : "Adds a mysterious new element!",
+			"type" : "data",
+			"uuid" : "5b6c8c90-240c-47ba-b3d9-3b65090cb8c8",
+			"version" : [ 1, 0, 0 ]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "87d91a41-1451-42d7-9c0c-521b7843b833",
+			"version": [0, 0, 1]
+		}
+	]
+}

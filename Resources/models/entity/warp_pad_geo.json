@@ -1,0 +1,24 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.warp_pad",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "pad",
+					"pivot": [0, 2, 0],
+					"cubes": [
+						{"origin": [-6, 0, -6], "size": [12, 1, 12], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}
